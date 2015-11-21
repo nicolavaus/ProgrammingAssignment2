@@ -63,6 +63,13 @@
 ##
 ##
 
+
+## The function makeCacheMatrix will receive as input a inversible square matrix
+## it will have arguments get,  setinverse and getinverse
+## get will return the input matrix taht was given to the function makeCacheMatrix
+## setinverse will set the value of the inverse matrix
+## getinverse will return the value of the inverse matrix
+## 
 makeCacheMatrix <- function(x = matrix()) {
   
   m <- NULL
@@ -91,7 +98,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
+## This function computes the inverse of the inverse of a matrix returned by makeCacheMatrix above.
 ##If the inverse has already been calculated (and the matrix has not changed),
 ##then the cachesolve should retrieve the inverse from the cache.
 
